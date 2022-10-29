@@ -48,9 +48,9 @@
 
   @csrf
   
-<input class="input_color" type="text" name="category" placeholder="write category name">
+<input class="input_color" type="text" name="category" placeholder="Digite a categoria">
 
-<input type="submit" class="btn btn-primary" name="submit" value="Add Category">
+<input type="submit" class="btn btn-primary" name="submit" value="Adicionar Categoria">
 
 </form>
 </div>
@@ -65,7 +65,7 @@
   <tr>
   <td>{{$data->category_name}}</td>
   <td>
-  <a class="btn btn-danger"href="">Deletar</a>
+  <a onclick="return confirm ('Você realmente deseja deletar!')" class="btn btn-danger"href="{{url('delete_category', $data->id)}}">Deletar</a>
 </td>
   </tr>
 
