@@ -9,10 +9,12 @@ use App\Models\Category;
 class AdminController extends Controller
 {
     public function view_category(){
-        return view('admin.category');
+        $data=category::all();
+        return view('admin.category', compact('data'));
     }
 
     public function add_category(Request $request){
+        
         $data=new category;
         $data->category_name=$request->category;
 

@@ -57,20 +57,19 @@
 
 <table class="center">
   <tr>
-  <td>Nome da Categpria</td>
+  <td>Nome da Categoria</td>
   <td>Action</td>
   </tr>
 
+  @foreach($data as $data)
   <tr>
-  <td>Toys</td>
+  <td>{{$data->category_name}}</td>
   <td>
   <a class="btn btn-danger"href="">Deletar</a>
 </td>
   </tr>
 
-
-
-
+@endforeach
 
   </table>
 
