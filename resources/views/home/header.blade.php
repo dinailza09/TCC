@@ -32,13 +32,24 @@
                            <i class="fa fa-search" aria-hidden="true"></i>
                            </button>
                         </form> 
-                        <li class="nav-item">
-                           <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
+
+                   @if (Route::has('login'))
+               
+                    @auth
+                    <li class="nav-item">
+                        <x-app-layout>
+                        </x-app-layout>
+                        </li>
+                    @else
+                    <li class="nav-item">
+                        <a href="{{ route('login') }}" id=logincss class="btn btn-primary">Log in</a>
                         </li>
                         <li class="nav-item">
-                           <a class="btn btn-success" href="{{ route('register') }}">Register</a>
-                        </li>
-                     </ul>
+                            <a href="{{ route('register') }}" id=logincss  class="btn btn-success">Register</a>
+                            </li>
+                    @endauth
+            @endif
+            </ul>    
                   </div>
                </nav>
             </div>
