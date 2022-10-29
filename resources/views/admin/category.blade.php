@@ -27,12 +27,21 @@
 
           <div class="main-panel">
           <div class="content-wrapper">
+@if(session()->has('message'))
 
+<div class="alert alert-success">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+  {{session()->get('message')}}
+    </div>
+@endif
 <div class="div_center">
   <h2 class="h2_font">Adicionar Categoria<h2>
 
- <form>
-<input class="input_color" type="text" name="name" placeholder="write category name">
+ <form action="{{url('/add_category')}}" method="POST">
+
+  @csrf
+  
+<input class="input_color" type="text" name="category" placeholder="write category name">
 
 <input type="submit" class="btn btn-primary" name="submit" value="Add Category">
 
