@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <h1> Categoria </h1>
-</body>
+  <head>
+    <!-- css -->
+    @include('admin.css')
+    <style type="text/css">
+      .div_center
+      {
+        text-align:center;
+        padding-top:40px;
+      }
+      .h2_font{
+        font-size:40px;
+        padding-bottom:40px;
+      }
+      .input_color{
+        color: black;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="container-scroller">
+          <!-- sidebar -->
+          @include('admin.sidebar')
+          <!-- header -->
+          @include('admin.header')
+
+          <div class="main-panel">
+          <div class="content-wrapper">
+
+<div class="div_center">
+  <h2 class="h2_font">Adicionar Categoria<h2>
+
+ <form>
+<input class="input_color" type="text" name="name" placeholder="write category name">
+
+<input type="submit" class="btn btn-primary" name="submit" value="Add Category">
+
+</form>
+</div>
+
+</div>
+</div>
+            <!-- script -->
+          @include('admin.script')
+  </body>
 </html>
