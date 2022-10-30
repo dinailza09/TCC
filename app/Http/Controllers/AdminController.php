@@ -23,14 +23,14 @@ class AdminController extends Controller
 
         $data->save();
 
-        return redirect()->back()->with('message','Categoria Adicioanda com sucesso');
+        return redirect()->back()->with('message','Categoria adicionada com sucesso');
 }     
 
     public function delete_category($id){
         $data=category::find($id);
 
         $data->delete();
-        return redirect()->back()->with('message','Categoria Deletado com sucesso');
+        return redirect()->back()->with('message','Categoria Deletada com sucesso');
     }
 
     public function view_product(){
@@ -58,7 +58,7 @@ class AdminController extends Controller
 
         $product->save();
 
-        return redirect()->back()->with('message','Produto adicioanda com sucesso');
+        return redirect()->back()->with('message','Produto adicionado com sucesso');
 }     
 
 }
