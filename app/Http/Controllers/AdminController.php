@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Category;
 
+
 class AdminController extends Controller
 {
     public function view_category(){
@@ -31,8 +32,19 @@ class AdminController extends Controller
     }
 
     public function view_product(){
-        $data=category::all();
-        return view('admin.product', compact('data'));
+        $category=category::all();
+        return view('admin.product', compact('category'));
     }
+
+
+    public function add_product(Request $request){
+        
+        $data=new category;
+        $data->category_name=$request->category;
+
+        $data->save();
+
+        return redirect()->back()->with('message','Categoria Adicioanda com sucesso');
+}     
 
 }

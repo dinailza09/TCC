@@ -65,7 +65,9 @@
 <label>Categoria:</label>
 <select class="text_color" name="category" required="">
     <option value="" selected="">Adicionar a categoria</option>
-    <option>shirt</option>
+    @foreach($category as $category)
+    <option>{{$category->category_name}}</option>
+    @endforeach
 </select>
 </div>
 
