@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Category;
 
+use App\Models\Product;
+
 
 class AdminController extends Controller
 {
@@ -39,12 +41,24 @@ class AdminController extends Controller
 
     public function add_product(Request $request){
         
-        $data=new category;
-        $data->category_name=$request->category;
+        $product=new product;
+        $product->title=$request->title;
+        $product->description=$request->description;
+        $product->price=$request->price;
+        $product->quantity=$request->quantity;
+        $product->category=$request->category;
+        $product->discount_price=$request->discount_price;
+        $image=$request->image;
 
-        $data->save();
+        $imagename=time().'.'.$image->getClientOriginalExtension();
 
-        return redirect()->back()->with('message','Categoria Adicioanda com sucesso');
+        $request->image->move('product', $imagename);
+
+        $product->image=$imagename;
+
+        $product->save();
+
+        return redirect()->back()->with('message','Produto adicioanda com sucesso');
 }     
 
 }
