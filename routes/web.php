@@ -17,6 +17,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 
+//Rota da Home
 Route::get('/', [HomeController::class, 'index']);
 
 
@@ -32,6 +33,9 @@ Route::middleware([
 });
 
 
+
+//Rotas da Categoria 
+
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
 Route::get('/view_category', [AdminController::class, 'view_category']);
@@ -41,6 +45,8 @@ Route::post('/add_category', [AdminController::class, 'add_category']);
 Route::get('/delete_category/{id}', [AdminController::class, 'delete_category']);
 
 
+
+//Rotas de Produtos
 
 Route::get('/view_product', [AdminController::class, 'view_product']);
 
