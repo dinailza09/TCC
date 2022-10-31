@@ -147,7 +147,7 @@ class HomeController extends Controller
 
             $order->image= $data->image;
 
-            $order->product_id= $data->product_id;
+            $order->product_id= $data->Product_id;
 
             $order->payment_status='cash on delivery';
 
@@ -156,9 +156,17 @@ class HomeController extends Controller
             $order->save();
 
 
+
+            $cart_id=$data->id;
+
+            $cart=cart::find($cart_id);
+
+            $cart->delete();
+
+
            
         }
-             return redirect()->back();
+        return redirect()->back()->with('message','Produto adicionado para deluvery com sucesso');
 
     
 }
