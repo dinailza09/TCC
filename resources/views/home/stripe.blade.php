@@ -9,7 +9,7 @@
     
 <div class="container">
     
-    <h1>Laravel 9 - Stripe Payment Gateway Integration Example <br/> ItSolutionStuff.com</h1>
+    <h1>Pay Using Your Card - Total Amount R${{$totalprice}}</h1>
     
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -28,7 +28,7 @@
     
                     <form 
                             role="form" 
-                            action="{{route('stripe.post')}}" 
+                            action="{{route('stripe.post', $totalprice)}}" 
                             method="post" 
                             class="require-validation"
                             data-cc-on-file="false"
