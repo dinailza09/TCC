@@ -30,6 +30,16 @@
         padding: 30px;
     }
 
+    table, th, td {
+        border: 1px solid grey;
+    }
+
+    .th_deg{
+        font-size: 30px;
+        padding: 5px;
+        background: skyblue;
+    }
+
     </style>
 
 
@@ -47,11 +57,11 @@
       <div class="center">
         <table>
             <tr>
-            <th>Título</th>
-            <th>Quantidade</th>
-            <th>Preço </th>
-            <th>Imagem</th>
-            <th>Ação</th>
+            <th class="th_deg">Título</th>
+            <th class="th_deg">Quantidade</th>
+            <th class="th_deg">Preço </th>
+            <th class="th_deg">Imagem</th>
+            <th class="th_deg">Ação</th>
            </tr>
             <tr>
             <th>Ração</th>
