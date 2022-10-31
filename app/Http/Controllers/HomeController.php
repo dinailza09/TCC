@@ -67,7 +67,13 @@ class HomeController extends Controller
 
            $cart->product_title=  $product->title;
 
-           $cart->price=  $product->image;
+           if($product->discount_price!=null)
+           {
+            $cart->price=  $product->discount_price * $request->quantity;
+           }
+           else {
+            $cart->price=  $product->price * $request->quantity;
+           }
 
            $cart->image=  $product->image;
 
