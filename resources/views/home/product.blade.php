@@ -28,9 +28,29 @@
                         <h5>
                          {{$product->title}}
                         </h5>
-                        <h6>
+
+                        @if($product->discount_price!=null)
+
+                        <h6 style="color: red" >
+                        Desconto
+                        <br>
+                        R${{$product->discount_price}}
+                        </h6>       
+                        
+                         <h6 style="text-decoration: line-through; color: blue">
                         R${{$product->price}}
                         </h6>
+
+                        @else
+
+                        <h6 style="color: blue">
+                        R${{$product->discount_price}}
+                        </h6>       
+                        
+
+                        @endif
+
+                      
                      </div>
                   </div>
                </div>
