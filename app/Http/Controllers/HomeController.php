@@ -90,7 +90,12 @@ class HomeController extends Controller
             return redirect('login');
         }
 
-    }
 
+    }
+       
+    
+          public function show_cart(){
+            return view('home.showcart');
+        }
 
 }
