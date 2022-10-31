@@ -95,11 +95,13 @@ class AdminController extends Controller
 
             $image=$request->image;
 
+            if($image){
+
             $imagename=time().'.'.$image->getClientOriginalExtension();
 
             $request->image->move('product', $imagename);
 
-            $product->image=$imagename;
+            $product->image=$imagename;}
 
             $product->save();
 

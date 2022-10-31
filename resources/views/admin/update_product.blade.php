@@ -92,7 +92,7 @@
 
 <div class="div_design">
 <label>Imagem</label>
-<input type="file" name="image" required="">
+<input type="file" name="image">
 </div>
 
 
