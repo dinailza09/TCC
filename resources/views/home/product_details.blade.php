@@ -26,20 +26,9 @@
       <div class="hero_area">
          <!-- header -->
         @include('home.header')  
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="{{url('product_details', $product->id)}}" class="option1">
-                           Detalhes do Produto
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
+
+      <div class="col-sm-6 col-md-4 col-lg-4" style="margin:auto; width:50%; padding:30px">            
+                     <div class="img-box" style="padding: 20px">
                         <img src="product/{{$product->image}}" alt="">
                      </div>
                      <div class="detail-box">
@@ -71,6 +60,12 @@
                         
 
                         @endif
+
+                        <h6>Categoria do Produto:{{$product->category}}</h6>
+                        <h6>Descrição do Produto:{{$product->description}}</h6>
+                        <h6>Quantidade:{{$product->quantity}}</h6>
+
+                        <a href="" class="btn btn-primary"> Add to Cart</a>
 
                       
                      </div>
