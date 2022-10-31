@@ -10,6 +10,8 @@ use App\Models\User;
 
 use App\Models\Product;
 
+use App\Models\Cart;
+
 class HomeController extends Controller
 {
 
@@ -43,11 +45,39 @@ class HomeController extends Controller
     }
 
 
-    public function add_cart($id){
+    public function add_cart(Request $request, $id){
 
         if(Auth::id())
         {
-            return redirect()->back();
+           $user=Auth::user();
+
+           $product=product::find($id);
+
+           $cart =new cart;
+
+           $cart->name= $user->name;
+
+           $cart->email= $user->email;
+
+           $cart->phone= $user->phone;
+
+           $cart->address= $user->address;
+
+           $cart->user_id= $user->id;
+
+           $cart->product_title=  $product->title;
+
+           $cart->price=  $product->image;
+
+           $cart->image=  $product->image;
+
+           $cart->Product_id=  $product->id;
+
+           $cart->quantity=$request->quantity;
+
+           $cart->save();
+
+           return redirect()->back();
         }
 
         else{
