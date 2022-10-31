@@ -79,7 +79,7 @@
             <th>{{$cart->quantity}}</th>
             <th>{{$cart->price}} </th>
             <th><img class="img_deg" src="/product/{{$cart->image}}"></th>
-            <th><a class="btn btn-danger" href="{{url('/remove_cart', $cart->id)}}">Remover Produto</th>
+            <th><a class="btn btn-danger" onclick="return confirm('Deseja realmente apagar esse produto?')" href="{{url('/remove_cart', $cart->id)}}">Remover Produto</th>
             </tr>
 
             <?php $totalprice=$totalprice + $cart->price ?>
