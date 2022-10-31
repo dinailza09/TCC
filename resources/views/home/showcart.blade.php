@@ -39,7 +39,16 @@
         padding: 5px;
         background: skyblue;
     }
-
+    .img_deg{
+        height: 200px;
+        width:200px;
+       
+    }
+    .total_deg{
+        font-size: 20px;
+        padding: 40px;
+       
+    }
     </style>
 
 
@@ -52,8 +61,6 @@
         @include('home.header')
      
         
-      </div>
-
       <div class="center">
         <table>
             <tr>
@@ -63,19 +70,29 @@
             <th class="th_deg">Imagem</th>
             <th class="th_deg">Ação</th>
            </tr>
+
+           <?php $totalprice=0; ?>
+
+           @foreach($cart as $cart)
             <tr>
-            <th>Ração</th>
-            <th>20</th>
-            <th>30.50 </th>
-            <th>Imagem</th>
-            <th>Remove</th>
+            <th>{{$cart->product_title}}</th>
+            <th>{{$cart->quantity}}</th>
+            <th>{{$cart->price}} </th>
+            <th><img class="img_deg" src="/product/{{$cart->image}}"></th>
+            <th><a class="btn btn-danger" href="{{url('/remove_cart', $cart->id)}}">Remover Produto</th>
             </tr>
+
+            <?php $totalprice=$totalprice + $cart->price ?>
+
+            @endforeach
+
         </table>
+        <div>
+            <h1 class="total_deg">Total: {{$totalprice}}</h1>
+        </div>
      </div>
      
-      <!-- footer -->
-      @include('home.footer')
-      
+   
 
 
       <div class="cpy_">
