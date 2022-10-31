@@ -105,7 +105,7 @@ class AdminController extends Controller
 
             $product->save();
 
-            return redirect()->back();
+            return redirect()->back()->with('message','Produto alterado com sucesso');
         }
 
 
