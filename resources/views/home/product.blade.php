@@ -38,13 +38,17 @@
                         </h6>       
                         
                          <h6 style="text-decoration: line-through; color: blue">
+                         Preço
+                         <br>
                         R${{$product->price}}
                         </h6>
 
                         @else
 
                         <h6 style="color: blue">
-                        R${{$product->discount_price}}
+                        Preço
+                         <br>
+                         R${{$product->price}}
                         </h6>       
                         
 
