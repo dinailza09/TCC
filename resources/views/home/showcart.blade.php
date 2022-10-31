@@ -100,12 +100,12 @@
         </div> <div>
         <h1 style="font-size:25px; padding-bottom: 15px;">Proceed to Order</h1>
         <a href="{{url('cash_order')}}" class="btn btn-danger">Cash on Delivery</a>
-        <a href="{{}}" class="btn btn-danger">Pay Using Card</a>
+        <a href="{{url('stripe', $totalprice)}}" class="btn btn-danger">Pay Using Card</a>
 </div>
      </div>
     
      
-   
+
 
 
       <div class="cpy_">

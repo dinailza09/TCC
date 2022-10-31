@@ -166,8 +166,17 @@ class HomeController extends Controller
 
            
         }
-        return redirect()->back()->with('message','Produto adicionado para deluvery com sucesso');
+        return redirect()->back()->with('message','Produto adicionado para deluvery com sucesso');    
 
+    }
+
+        public function stripe($totalprice){
     
+
+        return view('home.stripe', compact('totalprice'));
 }
+
+
+
+
 }
