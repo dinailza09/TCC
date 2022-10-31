@@ -28,7 +28,7 @@
     
                     <form 
                             role="form" 
-                            action="" 
+                            action="{{route('stripe.post')}}" 
                             method="post" 
                             class="require-validation"
                             data-cc-on-file="false"
@@ -38,8 +38,8 @@
     
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>Name on Card</label> <input
-                                    class='form-control' size='4' type='text'>
+                                <label class='control-label'>Name on Card</label> 
+                                <input class='form-control' size='4' type='text'>
                             </div>
                         </div>
     
@@ -78,7 +78,7 @@
     
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now ($100)</button>
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now</button>
                             </div>
                         </div>
                             
