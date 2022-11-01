@@ -50,7 +50,7 @@
   {{session()->get('message')}}
     </div>
 @endif
-          <h2 class="font_size">All Product</h2>
+          <h2 class="font_size">Todos os produtos</h2>
           <table class="center">
             <tr class="th_color">
                 <th class="th_deg">Título</th>

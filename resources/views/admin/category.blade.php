@@ -58,7 +58,7 @@
 <table class="center">
   <tr>
   <td>Nome da Categoria</td>
-  <td>Action</td>
+  <td>Ação</td>
   </tr>
 
   @foreach($data as $data)
