@@ -30,13 +30,13 @@
     
 <div class="container">
     
-    <h1 style="text-align: center; font-size:24px; padding-bottom: 20px;">Pay Using Your Card - Total Amount R${{$totalprice}}</h1>
+    <h1 style="text-align: center; font-size:24px; padding-bottom: 20px;">Pague usando seu cartão - Valor total R${{$totalprice}}</h1>
     
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table" >
-                        <h3 class="panel-title" >Payment Details</h3>
+                        <h3 class="panel-title" >Detalhes do pagamento</h3>
                 </div>
                 <div class="panel-body">
     
@@ -59,14 +59,14 @@
     
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group required'>
-                                <label class='control-label'>Name on Card</label> 
+                                <label class='control-label'>Nome no cartão</label> 
                                 <input class='form-control' size='4' type='text'>
                             </div>
                         </div>
     
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group card required'>
-                                <label class='control-label'>Card Number</label> <input
+                                <label class='control-label'>Número do cartão</label> <input
                                     autocomplete='off' class='form-control card-number' size='20'
                                     type='text'>
                             </div>
@@ -79,12 +79,12 @@
                                     type='text'>
                             </div>
                             <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Month</label> <input
+                                <label class='control-label'>Mês de validade</label> <input
                                     class='form-control card-expiry-month' placeholder='MM' size='2'
                                     type='text'>
                             </div>
                             <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Expiration Year</label> <input
+                                <label class='control-label'>Ano de expiração</label> <input
                                     class='form-control card-expiry-year' placeholder='YYYY' size='4'
                                     type='text'>
                             </div>
@@ -92,14 +92,13 @@
     
                         <div class='form-row row'>
                             <div class='col-md-12 error form-group hide'>
-                                <div class='alert-danger alert'>Please correct the errors and try
-                                    again.</div>
+                                <div class='alert-danger alert'>Corrija os erros e tente novamente.</div>
                             </div>
                         </div>
     
                         <div class="row">
                             <div class="col-xs-12">
-                               <input type="submit" name="" value="Pay Now">
+                               <input type="submit" name="" value="Pague agora">
                             </div>
                         </div>
                             
