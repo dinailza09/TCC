@@ -96,11 +96,11 @@
 
         </table>
         <div>
-            <h1 class="total_deg">Total do Preço: R${{$totalprice}}</h1>
+            <h1 class="total_deg">Valor Total: R${{$totalprice}}</h1>
         </div> <div>
-        <h1 style="font-size:25px; padding-bottom: 15px;">Proceed to Order</h1>
-        <a href="{{url('cash_order')}}" class="btn btn-danger">Cash on Delivery</a>
-        <a href="{{url('stripe', $totalprice)}}" class="btn btn-danger">Pay Using Card</a>
+        <h1 style="font-size:25px; padding-bottom: 15px;">Proceder ao pedido</h1>
+        <a href="{{url('cash_order')}}" class="btn btn-danger">Dinheiro na entrega</a>
+        <a href="{{url('stripe', $totalprice)}}" class="btn btn-danger">Pague com cartão</a>
 </div>
      </div>
     
