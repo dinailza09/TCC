@@ -24,13 +24,13 @@
 </head>
 <body>
 <div class="hero_area">
-         <!-- header -->
-        @include('home.header')
-      
+    <span style="font-size: 18px;"> @include('home.header')
+      </span>
+       
     
 <div class="container">
     
-    <h1>Pay Using Your Card - Total Amount R${{$totalprice}}</h1>
+    <h1 style="text-align: center; font-size:24px; padding-bottom: 20px;">Pay Using Your Card - Total Amount R${{$totalprice}}</h1>
     
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -99,7 +99,7 @@
     
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now</button>
+                               <input type="submit" name="" value="Pay Now">
                             </div>
                         </div>
                             
