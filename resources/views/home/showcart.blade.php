@@ -40,8 +40,8 @@
         background: skyblue;
     }
     .img_deg{
-        height: 200px;
-        width:200px;
+        height: 100px;
+        width:100px;
        
     }
     .total_deg{
