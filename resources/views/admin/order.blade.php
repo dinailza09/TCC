@@ -67,7 +67,7 @@
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>
 
-              <td><a href="" class="btn btn-primary">Deliverd</a></td>
+              <td><a href="{{url('delivered', $order->id)}}" class="btn btn-primary">Deliverd</a></td>
     </tr>
 
     @endforeach
