@@ -20,6 +20,10 @@
       .th_deg{
         background-color:skyblue;
       }
+      .img_size{
+        width:200px;
+        height: 200px;
+      }
       </style>
   </head>
   <body>
@@ -49,18 +53,20 @@
 
             </tr>
 
+            @foreach($order as $order)
             <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Endereço</th>
-              <th>Telefone</th>
-              <th>Título do produto</th>
-              <th>Quantidade</th>
-              <th>Preço</th>
-              <th>Status do pagamento</th>
-              <th>Status do delivery</th>
-              <th>Imagem</th>
-
+              <th>{{$order->name}}</th>
+              <th>{{$order->email}}</th>
+              <th>{{$order->address}}</th>
+              <th>{{$order->phone}}</th>
+              <th>{{$order->product_title}}</th>
+              <th>{{$order->quantity}}</th>
+              <th>{{$order->price}}</th>
+              <th>{{$order->payment_status}}</th>
+              <th>{{$order->delivery_status}}</th>
+              <th><img class="img_size" src="/product/{{$order->image}}"></th>
+    </tr>
+    @endforeach
           </table>
 
 </div>
