@@ -40,16 +40,17 @@
           <h1>Todos os pedidos</h1>
           <table class="table_deg">
             <tr class="th_deg">
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Endereço</th>
-              <th>Telefone</th>
-              <th>Título do produto</th>
-              <th>Quantidade</th>
-              <th>Preço</th>
-              <th>Status do pagamento</th>
-              <th>Status do delivery</th>
-              <th>Imagem</th>
+              <th style="padding: 10px;">Nome</th>
+              <th  style="padding 10px;">Email</th>
+              <th  style="padding 10px;">Endereço</th>
+              <th  style="padding 10px;">Telefone</th>
+              <th  style="padding 10px;">Título do produto</th>
+              <th  style="padding 10px;">Quantidade</th>
+              <th  style="padding 10px;">Preço</th>
+              <th style="padding 10px;">Status do pagamento</th>
+              <th  style="padding 10px;">Status do delivery</th>
+              <th  style="padding 10px;">Imagem</th>
+              <th  style="padding 10px;">Delivered</th>
 
             </tr>
 
@@ -65,7 +66,10 @@
               <th>{{$order->payment_status}}</th>
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>
+
+              <td><a href="" class="btn btn-primary">Deliverd</a></td>
     </tr>
+
     @endforeach
           </table>
 
