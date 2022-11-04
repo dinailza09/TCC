@@ -93,7 +93,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Order</span>
+              <span class="menu-title">Pedidos</span>
             </a>
           </li>
          
