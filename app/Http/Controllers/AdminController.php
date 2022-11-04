@@ -123,6 +123,8 @@ public function delivered($id){
 
     $order->delivery_status="delivered";
 
+    $order->payment_status="Paid";
+
     $order->save();
 
     return redirect()->back();

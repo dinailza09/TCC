@@ -67,7 +67,14 @@
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>
 
-              <td><a href="{{url('delivered', $order->id)}}" class="btn btn-primary">Deliverd</a></td>
+              <td>
+                @if($order->delivery_status=='processing')
+                <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Are you sure this product is delivered!!!')" class="btn btn-primary">Deliverd</a>
+              @else
+              <p style="color:green;">Delivered</p>
+              
+                @endif
+              </td>
     </tr>
 
     @endforeach
