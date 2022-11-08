@@ -20,8 +20,8 @@
    Status do Pagamento: <h3>{{$order->payment_status}}</h3>
    Id do Produto: <h3>{{$order->Product_id}}</h3>
    <br><br>
-  Imagem do Produto:
-   <img height="250" width="450" src="product/{{$order->image}}">
+  Imagem do Produto:<br>
+   <img height="200" width="200" src="product/{{$order->image}}">
 </body>
 
 </html>
