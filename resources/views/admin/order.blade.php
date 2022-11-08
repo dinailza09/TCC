@@ -51,6 +51,7 @@
               <th  style="padding 10px;">Status do delivery</th>
               <th  style="padding 10px;">Imagem</th>
               <th  style="padding 10px;">Delivered</th>
+              <th  style="padding 10px;">Gerar PDF</th>
 
             </tr>
 
@@ -75,6 +76,12 @@
               
                 @endif
               </td>
+
+<td>
+  <a href="{{url('print_pdf', $order->id)}}"class="btn btn-secondary">PDF</a>
+</td>
+
+
     </tr>
 
     @endforeach
