@@ -10,6 +10,8 @@ use App\Models\Product;
 
 use App\Models\Order;
 
+use PDF;
+
 
 class AdminController extends Controller
 {
@@ -129,6 +131,18 @@ public function delivered($id){
 
     return redirect()->back();
 }
+
+
+public function print_pdf($id){
+
+$pdf= PDF::loadview('admin.pdf');
+
+return $pdf->download('order_details');
+
+}
+
+
+
 
 
 
