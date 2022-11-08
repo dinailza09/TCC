@@ -19,6 +19,9 @@
    Quantidade do Produto: <h3>{{$order->quantity}}</h3>
    Status do Pagamento: <h3>{{$order->payment_status}}</h3>
    Id do Produto: <h3>{{$order->Product_id}}</h3>
+   <br><br>
+  Imagem do Produto:
+   <img height="250" width="450" src="product/{{$order->image}}">
 </body>
 
 </html>

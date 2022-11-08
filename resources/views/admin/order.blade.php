@@ -21,8 +21,8 @@
         background-color:skyblue;
       }
       .img_size{
-        width:200px;
-        height: 200px;
+        width:80px;
+        height: 80px;
       }
       </style>
   </head>
@@ -50,7 +50,7 @@
               <th style="padding 10px;">Status do pagamento</th>
               <th  style="padding 10px;">Status do delivery</th>
               <th  style="padding 10px;">Imagem</th>
-              <th  style="padding 10px;">Delivered</th>
+              <th  style="padding 10px;">Entregue</th>
               <th  style="padding 10px;">Gerar PDF</th>
 
             </tr>
@@ -72,7 +72,7 @@
                 @if($order->delivery_status=='processing')
                 <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Are you sure this product is delivered!!!')" class="btn btn-primary">Deliverd</a>
               @else
-              <p style="color:green;">Delivered</p>
+              <p style="color:green;">Entregue</p>
               
                 @endif
               </td>

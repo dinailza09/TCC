@@ -123,9 +123,9 @@ public function order(){
 public function delivered($id){
     $order=order::find($id);
 
-    $order->delivery_status="delivered";
+    $order->delivery_status="Entregue";
 
-    $order->payment_status="Paid";
+    $order->payment_status="Pago";
 
     $order->save();
 
@@ -139,7 +139,7 @@ public function print_pdf($id){
 
 $pdf= PDF::loadview('admin.pdf', compact('order'));
 
-return $pdf->download('order_details');
+return $pdf->download('detalhe_pedido');
 
 }
 
