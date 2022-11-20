@@ -83,7 +83,7 @@
 </td>
 
 <td>
-  <a href="{{url('send_email', $order->id}}"class="btn btn-info">Enviar Email</a>
+  <a href="{{url('send_email', $order->id)}}"class="btn btn-info">Enviar Email</a>
 </td>
 
 
