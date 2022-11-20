@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar Email</title>
-</head>
-<body>
-    <h1>Enviar email para os usuários!</h1>
-</body>
+  <head>
+    <base href="/oublic">
+    <!-- css -->
+    @include('admin.css')
+  </head>
+  <body>
+    <div class="container-scroller">
+          <!-- sidebar -->
+          @include('admin.sidebar')
+          <!-- header -->
+          @include('admin.header')
+        
+          <!-- script -->
+          @include('admin.script')
+  </body>
 </html>
