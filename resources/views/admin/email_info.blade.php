@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/oublic">
+    <base href="/public">
     <!-- css -->
     @include('admin.css')
+<style type="text/css">
+    label{
+      display: inline-block;
+      width: 100%;
+    }
+    </style>
   </head>
   <body>
     <div class="container-scroller">
