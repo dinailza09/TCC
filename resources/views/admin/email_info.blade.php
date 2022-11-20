@@ -12,6 +12,12 @@
           <!-- header -->
           @include('admin.header')
         
+
+          <div class="main-panel">
+          <div class="content-wrapper">
+
+</div>
+</div>
           <!-- script -->
           @include('admin.script')
   </body>
