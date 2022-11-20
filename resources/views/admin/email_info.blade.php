@@ -8,6 +8,8 @@
     label{
       display: inline-block;
       width: 100%;
+      font-size: 15px;
+      font-weight: bold;
     }
     </style>
   </head>
