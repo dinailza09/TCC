@@ -36,7 +36,7 @@ Route::middleware([
 
 //Rotas da Categoria 
 
-Route::get('/redirect', [HomeController::class, 'redirect']);
+Route::get('/redirect', [HomeController::class, 'redirect'])->middleware('auth', 'verifed'); 
 
 Route::get('/view_category', [AdminController::class, 'view_category']);
 
