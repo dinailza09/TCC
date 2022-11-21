@@ -5,9 +5,10 @@
                <h2>
                    <span>Produtos</span>
                </h2>
+               <br><br>
                <div>
-                  <form>
-                     <input type="text" name="search" placeholder="Digite para pesquisar">
+                  <form action="{{url('product_search')}}" method="GET">
+                     <input style="width: 500px" type="text" name="search" placeholder="Digite para pesquisar">
                   <input  type="submit" value="Pesquisar">
                   </form>
                </div>
