@@ -18,13 +18,13 @@
                            </ul>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="product.html">Products</a>
+                           <a class="nav-link" href="/produtos">Produtos</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="blog_list.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="contact.html">Contact</a>
+                           <a class="nav-link" href="contact.html">Contato</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('show_cart')}}">Carrinho</a>
