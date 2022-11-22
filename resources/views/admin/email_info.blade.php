@@ -31,32 +31,32 @@
 @csrf
           <div style="padding-left: 35%; padding-top:30px;">
             <label>Saudação por Email:</label>
-            <input type="text" name="greeting">
+            <input style="color: black;" type="text" name="greeting">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
             <label> Email FirstLing:</label>
-            <input type="text" name="firstline">
+            <input style="color: black;" type="text" name="firstline">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
             <label>Corpo do Email:</label>
-            <input type="text" name="body">
+            <input style="color: black;" type="text" name="body">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
             <label>Email Button name:</label>
-            <input type="text" name="button">
+            <input style="color: black;" type="text" name="button">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
             <label> Email URL:</label>
-            <input type="text" name="url">
+            <input style="color: black;" type="text" name="url">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
             <label> Email Last Line:</label>
-            <input type="text" name="lastline">
+            <input style="color: black;" type="text" name="lastline">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
