@@ -84,4 +84,8 @@ Route::get('/print_pdf/{id}', [AdminController::class, 'print_pdf']);
 Route::get('/send_email/{id}', [AdminController::class, 'send_email']);
 
 
-Route::get('/product_search', [HomeController::class, 'product_search']);
+Route::post('/send_email/{id}', [AdminController::class, 'send_email']);
+
+
+
+Route::post('/send_user_email/{id}', [AdminController::class, 'send_user_email']);
