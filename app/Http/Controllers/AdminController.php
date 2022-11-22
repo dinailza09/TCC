@@ -12,6 +12,10 @@ use App\Models\Order;
 
 use PDF;
 
+use Notification;
+
+use App\Notifications\SendEmailNotification;
+
 
 class AdminController extends Controller
 {
@@ -150,6 +154,24 @@ public function send_email($id){
     return view('admin.email_info', compact('order')); 
 
 }
+
+public function send_user_email(Request $request, $id){
+
+    $order=order::find($id);
+
+    $details= [
+        'greeting'=>  $request-> greeting,
+        'firstline'=>  $request-> firstline,
+        'body'=>  $request-> body,
+        'button'=>  $request-> button,
+        'url'=>  $request-> url,
+        'lastline'=>  $request-> lastline,
+        
+    ];
+
+    Notification::send($order, new SendEmailNotification( $details));
+}
+
 
 
 
