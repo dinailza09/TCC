@@ -170,6 +170,7 @@ public function send_user_email(Request $request, $id){
     ];
 
     Notification::send($order, new SendEmailNotification( $details));
+    return redirect()->back();
 }
 
 
