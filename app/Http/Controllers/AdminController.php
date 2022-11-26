@@ -10,6 +10,8 @@ use App\Models\Product;
 
 use App\Models\Order;
 
+use App\Models\ItensPedido;
+
 use PDF;
 
 use Notification;

@@ -15,19 +15,18 @@ return new class extends Migration
     {
         Schema::create('itens_pedidos', function (Blueprint $table) {
             $table->id();
-            $table->integer("quantity");
-            $table->decimal("price");
-            $table->integer("produto_id")->unsigned();
-            $table->integer("pedido_id")->unsigned();
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->string('product_title')->nullable();
+            $table->string('price')->nullable();
+            $table->string('quantity')->nullable();
+            $table->string('image')->nullable();
+            $table->string('Product_id')->nullable();
+            $table->string('Orders_id')->nullable();
+            $table->string('user_id')->nullable();
             $table->timestamps();
-
-            $table->foreign("produto_id")
-            ->references("id")
-            ->on("products")->onDelete("cascade");
-
-            $table->foreign("pedido_id")
-            ->references("id")
-            ->on("orders")->onDelete("cascade");
         });
     }
 

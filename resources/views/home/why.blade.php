@@ -2,7 +2,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Why Shop With Us
+                 Sobre Nós
                </h2>
             </div>
             <div class="row">
@@ -97,11 +97,9 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Fast Delivery
+                        Entrega Rápida
                         </h5>
-                        <p>
-                           variations of passages of Lorem Ipsum available
-                        </p>
+            
                      </div>
                   </div>
                </div>
@@ -212,11 +210,8 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Free Shiping
+                        Frete GrátiS
                         </h5>
-                        <p>
-                           variations of passages of Lorem Ipsum available
-                        </p>
                      </div>
                   </div>
                </div>
@@ -233,11 +228,9 @@
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Best Quality
+                        Melhor Qualidade
                         </h5>
-                        <p>
-                           variations of passages of Lorem Ipsum available
-                        </p>
+                        
                      </div>
                   </div>
                </div>
