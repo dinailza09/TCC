@@ -39,10 +39,10 @@
                         </li>
                     @else
                     <li class="nav-item">
-                        <a href="{{ route('login') }}" id=logincss class="btn btn-primary">Log in</a>
+                        <a href="{{ route('login') }}" id=logincss class="btn btn-primary">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('register') }}" id=logincss  class="btn btn-success">Register</a>
+                            <a href="{{ route('register') }}" id=logincss  class="btn btn-success">Cadastrar</a>
                             </li>
                     @endauth
             @endif
