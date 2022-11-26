@@ -38,15 +38,17 @@
           <div class="content-wrapper">
 
          <b> <h1>Todos os pedidos</h1> </b>
+
+         <br><br><br>   <b><h1>Clientes</h1></b>
           <table class="table_deg">
             <tr class="th_deg">
-              <th style="padding: 5px;">Nº Pedido</th>
+           
+              <th style="padding: 5px;">Nº Pedido</th> 
               <th style="padding: 5px;">Nome</th>
               <th style="padding: 5px;">Email</th>
               <th  style="padding 5px;">Endereço</th>
               <th  style="padding 5px;">Telefone</th>
 
-            </tr>
             @foreach($order as $order)
              <tr>
               <th>{{$order->id}}</th>
@@ -58,8 +60,10 @@
             </table>
 
 
-
-            <table class="table_deg">
+ 
+ 
+ <br><br><br>   <b><h1>Pedidos</h1></b>
+            <table class="table_deg">          
             <tr class="th_deg">
             <th style="padding: 5px;">Nº Pedido</th>
             <th  style="padding 5px;">Título do produto</th>
