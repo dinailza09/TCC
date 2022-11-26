@@ -19,7 +19,7 @@
                                  </p></b>
                                  <div class="btn-box">
                                     <a href="" class="btn1">
-                                    Shop Now
+                                    Saiba mais
                                     </a>
                                  </div>
                               </div>
@@ -42,7 +42,7 @@
                                  </p></b>
                                  <div class="btn-box">
                                     <a href="" class="btn1">
-                                    Shop Now
+                                    Saiba mais
                                     </a>
                                  </div>
                               </div>
@@ -66,7 +66,7 @@
                                  </p></b>
                                  <div class="btn-box">
                                     <a href="" class="btn1">
-                                    Shop Now
+                                    Saiba mais
                                     </a>
                                  </div>
                               </div>

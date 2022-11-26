@@ -8,15 +8,14 @@
                   <div class="col-md-6 ml-auto">
                      <div class="heading_container remove_line_bt">
                         <h2>
-                           #NewArrivals
+                        Villa Pet 
                         </h2>
+                        <b>Experimente algo diferenciado<p>
+</p></b>
                      </div>
                      <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
+                     Villa Pet Estética Animal é o Pet Shop do seu bairro e oferece tudo que você possa imaginar para seu animal de estimação. Temos uma grande variedade de produtos e comida, tudo da mais alta qualidade. 
                      </p>
-                     <a href="">
-                     Shop Now
-                     </a>
                   </div>
                </div>
             </div>
