@@ -40,19 +40,19 @@
           <h1>Todos os pedidos</h1>
           <table class="table_deg">
             <tr class="th_deg">
-              <th style="padding: 10px;">Nome</th>
-              <th  style="padding 10px;">Email</th>
-              <th  style="padding 10px;">Endereço</th>
-              <th  style="padding 10px;">Telefone</th>
-              <th  style="padding 10px;">Título do produto</th>
-              <th  style="padding 10px;">Quantidade</th>
-              <th  style="padding 10px;">Preço</th>
-              <th style="padding 10px;">Status do pagamento</th>
-              <th  style="padding 10px;">Status do delivery</th>
-              <th  style="padding 10px;">Imagem</th>
-              <th  style="padding 10px;">Entregue</th>
-              <th  style="padding 10px;">Gerar PDF</th>
-              <th  style="padding 10px;">Enviar Email</th>
+              <th style="padding: 5px;">Nome</th>
+              <th style="padding: 5px;">Email</th>
+              <th  style="padding 5px;">Endereço</th>
+              <th  style="padding 5px;">Telefone</th>
+              <th  style="padding 5px;">Título do produto</th>
+              <th  style="padding 5px;">Quantidade</th>
+              <th  style="padding 5px;">Preço</th>
+              <th style="padding 5px;">Status do pagamento</th>
+              <th  style="padding 5px;">Status do delivery</th>
+              <th  style="padding 5px;">Imagem</th>
+              <th  style="padding 5px;">Entregue</th>
+              <th  style="padding 5px;">Gerar PDF</th>
+              <th  style="padding 5px;">Enviar Email</th>
 
             </tr>
 

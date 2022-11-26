@@ -120,6 +120,7 @@ class AdminController extends Controller
 public function order(){
 
     $order=order::all();
+    
     return view ('admin.order', compact('order'));
 }
 
