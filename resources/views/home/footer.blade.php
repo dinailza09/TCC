@@ -8,9 +8,10 @@
                         <a href="#"><img width="210" src="images/logo.png" alt="#" /></a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
-                        <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
+                        <p><strong>ENDEREÇO:</strong> Rua Antunes Ribas, 
+                        <br>Passo Fundo, RS</p>
+                        <p><strong>TELEFONE:</strong> +54 9 9948-1462</p>
+                        <p><strong>EMAIL:</strong> villapet@gmail.com</p>
                       </div>
                    </div>
                </div>
@@ -22,25 +23,22 @@
                      <div class="widget_menu">
                         <h3>Menu</h3>
                         <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
-                           <li><a href="#">Testimonial</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
+                           <li><a href="/">Home</a></li>
+                           <li><a href="#why_section layout_padding">Sobre</a></li>
+                           <li><a href="#">Cachorro</a></li>
+                           <li><a href="#">Gatos</a></li>
+                           <li><a href="#">Brinquedos</a></li>
+                          
                         </ul>
                      </div>
                   </div>
                   <div class="col-md-6">
                      <div class="widget_menu">
-                        <h3>Account</h3>
+                        <h3>Conta</h3>
                         <ul>
-                           <li><a href="#">Account</a></li>
-                           <li><a href="#">Checkout</a></li>
-                           <li><a href="#">Login</a></li>
-                           <li><a href="#">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
-                           <li><a href="#">Widget</a></li>
+                           <li><a href="/login">Entrar</a></li>
+                           <li><a href="/register">Cadastrar</a></li>
+            
                         </ul>
                      </div>
                   </div>
