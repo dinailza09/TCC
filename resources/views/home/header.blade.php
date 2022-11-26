@@ -21,7 +21,7 @@
                            <a class="nav-link" href="contact.html">Binquedos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="{{url('show_cart')}}">Carrinho</a>
+                           <a class="nav-link" href="{{url('show_cart')}}">🛒</a>
                         </li>
                        
                         <form class="form-inline">
