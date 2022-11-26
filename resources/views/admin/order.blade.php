@@ -8,7 +8,7 @@
       {
         text-align:center;
         font-size: 25px;
-        font-wights:bold;
+        font-width:bold;
         padding-bottom: 40px;
       }
       .table_deg{
@@ -18,7 +18,7 @@
         
       }
       .th_deg{
-        background-color:skyblue;
+        background-color: brown;
       }
       .img_size{
         width:80px;
@@ -37,14 +37,32 @@
           <div class="main-panel">
           <div class="content-wrapper">
 
-          <h1>Todos os pedidos</h1>
+         <b> <h1>Todos os pedidos</h1> </b>
           <table class="table_deg">
             <tr class="th_deg">
+              <th style="padding: 5px;">Nº Pedido</th>
               <th style="padding: 5px;">Nome</th>
               <th style="padding: 5px;">Email</th>
               <th  style="padding 5px;">Endereço</th>
               <th  style="padding 5px;">Telefone</th>
-              <th  style="padding 5px;">Título do produto</th>
+
+            </tr>
+            @foreach($order as $order)
+             <tr>
+              <th>{{$order->id}}</th>
+              <th>{{$order->name}}</th>
+              <th>{{$order->email}}</th>
+              <th>{{$order->address}}</th>
+              <th>{{$order->phone}}</th>
+              </tr> @endforeach 
+            </table>
+
+
+
+            <table class="table_deg">
+            <tr class="th_deg">
+            <th style="padding: 5px;">Nº Pedido</th>
+            <th  style="padding 5px;">Título do produto</th>
               <th  style="padding 5px;">Quantidade</th>
               <th  style="padding 5px;">Preço</th>
               <th style="padding 5px;">Status do pagamento</th>
@@ -53,15 +71,12 @@
               <th  style="padding 5px;">Entregue</th>
               <th  style="padding 5px;">Gerar PDF</th>
               <th  style="padding 5px;">Enviar Email</th>
+              </tr>
 
-            </tr>
 
-            @foreach($order as $order)
+           
             <tr>
-              <th>{{$order->name}}</th>
-              <th>{{$order->email}}</th>
-              <th>{{$order->address}}</th>
-              <th>{{$order->phone}}</th>
+              <th>{{$order->id}}</th>
               <th>{{$order->product_title}}</th>
               <th>{{$order->quantity}}</th>
               <th>{{$order->price}}</th>
@@ -89,7 +104,7 @@
 
     </tr>
 
-    @endforeach
+   
           </table>
 
 </div>

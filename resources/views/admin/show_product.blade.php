@@ -25,12 +25,12 @@
       }
       .th_color
       {
-       background: skyblue;
+       background: brown;
       }
 
       .th_deg
       {
-        padding:30px;
+        padding:10px;
       }
       </style>
   </head>
