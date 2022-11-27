@@ -35,9 +35,9 @@
     }
 
     .th_deg{
-        font-size: 30px;
+        font-size: 20px;
         padding: 5px;
-        background: skyblue;
+        background: brown;
     }
     .img_deg{
         height: 100px;
@@ -86,8 +86,9 @@
             <th>{{$cart->product_title}}</th>
             <th>{{$cart->quantity}}</th>
             <th>{{$cart->price}} </th>
+
             <th><img class="img_deg" src="/product/{{$cart->image}}"></th>
-            <th><a class="btn btn-danger" onclick="return confirm('Deseja realmente apagar esse produto?')" href="{{url('/remove_cart', $cart->id)}}">Remover Produto</th>
+            <th><a class="btn btn-danger" onclick="return confirm('Deseja realmente apagar esse produto?')" href="{{url('/remove_cart', $cart->id)}}">Remover</th>
             </tr>
 
             <?php $totalprice=$totalprice + $cart->price ?>
