@@ -11,7 +11,7 @@
       <meta name="description" content="" />
       <meta name="author" content="" />
       <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>Famms - Fashion HTML Template</title>
+      <title>Carrinho - Villa Pet</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -32,12 +32,13 @@
 
     table, th, td {
         border: 1px solid grey;
+        
     }
 
     .th_deg{
         font-size: 20px;
         padding: 5px;
-        background: brown;
+        background:brown;
     }
     .img_deg{
         height: 100px;
@@ -85,7 +86,7 @@
             <tr>
             <th>{{$cart->product_title}}</th>
             <th>{{$cart->quantity}}</th>
-            <th>{{$cart->price}} </th>
+            <th>R${{$cart->price}} </th>
 
             <th><img class="img_deg" src="/product/{{$cart->image}}"></th>
             <th><a class="btn btn-danger" onclick="return confirm('Deseja realmente apagar esse produto?')" href="{{url('/remove_cart', $cart->id)}}">Remover</th>

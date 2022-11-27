@@ -12,6 +12,8 @@ use App\Models\Order;
 
 use App\Models\ItensPedido;
 
+use App\Models\Cart;
+
 use PDF;
 
 use Notification;
@@ -144,7 +146,9 @@ public function print_pdf($id){
 
 $order=order::find($id);
 
-$pdf= PDF::loadview('admin.pdf', compact('order'));
+$cart =cart::find($id);
+
+$pdf= PDF::loadview('admin.pdf', compact('order', 'cart'));
 
 return $pdf->download('detalhe_pedido');
 

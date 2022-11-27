@@ -8,7 +8,7 @@
       {
         text-align:center;
         font-size: 25px;
-        font-weight:bold;
+        font-wights:bold;
         padding-bottom: 40px;
       }
       .table_deg{
@@ -18,17 +18,11 @@
         
       }
       .th_deg{
-        background-color: brown;
-        
+        background-color:brown;
       }
       .img_size{
         width:80px;
         height: 80px;
-      }
-      .font_size
-      {
-        font-size:30px;
-        padding-bottom:30px;
       }
       </style>
   </head>
@@ -43,36 +37,14 @@
           <div class="main-panel">
           <div class="content-wrapper">
 
-         <b> <h1 class="font_size">Todos os pedidos</h1> </b>
-
-         <br><br><br>   <b><h1>Clientes</h1></b>
+          <h1>Todos os pedidos</h1>
           <table class="table_deg">
             <tr class="th_deg">
-           
-              <th style="padding: 5px;">Nº Pedido</th> 
+            <th style="padding: 5px;">Nº Pedido</th>
               <th style="padding: 5px;">Nome</th>
-              <th style="padding: 5px;">Email</th>
               <th  style="padding: 5px;">Endereço</th>
               <th  style="padding: 5px;">Telefone</th>
-
-            @foreach($order as $order)
-             <tr>
-              <th>{{$order->id}}</th>
-              <th>{{$order->name}}</th>
-              <th>{{$order->email}}</th>
-              <th>{{$order->address}}</th>
-              <th>{{$order->phone}}</th>
-              </tr> @endforeach 
-            </table>
-
-
- 
- 
- <br><br><br>   <b><h1>Pedidos</h1></b>
-            <table class="table_deg">          
-            <tr class="th_deg">
-            <th style="padding: 5px;">Nº Pedido</th>
-            <th  style="padding: 5px;">Título do produto</th>
+              <th  style="padding: 5px;">Título do produto</th>
               <th  style="padding: 5px;">Quantidade</th>
               <th  style="padding: 5px;">Preço</th>
               <th style="padding: 5px;">Status do pagamento</th>
@@ -81,22 +53,25 @@
               <th  style="padding: 5px;">Entregue</th>
               <th  style="padding: 5px;">Gerar PDF</th>
               <th  style="padding: 5px;">Enviar Email</th>
-              </tr>
 
+            </tr>
 
-           
+            @foreach($order as $order)
             <tr>
-              <th>{{$order->id}}</th>
+            <th><center>{{$order->id}}</center></th>
+              <th>{{$order->name}}</th>
+              <th>{{$order->address}}</th>
+              <th>{{$order->phone}}</th>
               <th>{{$order->product_title}}</th>
-              <th>{{$order->quantity}}</th>
-              <th>R${{$order->price}}</th>
+              <th><center>{{$order->quantity}}</center></th>
+              <th><center>{{$order->price}}</center></th>
               <th>{{$order->payment_status}}</th>
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>
 
               <td>
                 @if($order->delivery_status=='processing')
-                <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Tem certeza que este produto foi entregue:')" class="btn btn-primary">Entregue</a>
+                <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Are you sure this product is delivered!!!')" class="btn btn-primary">Entregue</a>
               @else
               <p style="color:green;">Entregue</p>
               
@@ -111,10 +86,10 @@
   <a href="{{url('send_email', $order->id)}}"class="btn btn-info">Enviar Email</a>
 </td>
 
-
+ 
     </tr>
 
-   
+    @endforeach
           </table>
 
 </div>
