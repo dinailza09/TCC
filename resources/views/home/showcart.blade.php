@@ -110,10 +110,10 @@
 
 
 
-      <div class="cpy_">
-         <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
+      <<div class="cpy_">
+         <p class="mx-auto">Copyright 2022 © Todos os direitos reservados à <a href="#"> Villa Pet</a><br>
          
-            Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+            Feito por <a href="#">Dinailza Soares</a>
          
          </p>
       </div>
