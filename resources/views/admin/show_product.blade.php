@@ -30,7 +30,7 @@
 
       .th_deg
       {
-        padding:10px;
+        padding:30px;
       }
       </style>
   </head>
@@ -74,7 +74,7 @@
                 <th>{{$product->discount_price}}</th>
                 <th><img class="img_size" src="/product/{{$product->image}}"></th>
            
-           <td><a class="btn btn-danger" onclick="return confirm('Deseja realmente deletar!')" href="{{url('delete_product', $product->id)}}">Deletar</td>
+           <td><a class="btn btn-danger" onclick="return confirm('Deseja realmente deletar esse produto!')" href="{{url('delete_product', $product->id)}}">Deletar</td>
            <td><a class="btn btn-success" href="{{url('update_product', $product->id)}}">Editar</td>
 
             </tr>
