@@ -144,7 +144,7 @@ public function delivered($id){
 
 public function print_pdf($id){
 
-$order=order::find($id);
+    $order=order::find($id);
 
 
 

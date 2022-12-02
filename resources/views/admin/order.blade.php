@@ -37,7 +37,17 @@
           <div class="main-panel">
           <div class="content-wrapper">
 
-          <h1>Todos os pedidos</h1>
+          <center><b><h1>Todos os pedidos</h1></b></center><br>
+
+          <div style="padding-left: 400px; padding-bottom:30px; ">
+            <form>
+              <input type="text" name="search" placeholder="Digite para pesquisar">
+    <input type="submit" value="Search" class="btn btn-outline-primary">
+            </form>
+          </div>
+
+
+
           <table class="table_deg">
             <tr class="th_deg">
             <th style="padding: 5px;">Nº Pedido</th>
