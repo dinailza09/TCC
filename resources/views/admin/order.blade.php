@@ -101,9 +101,9 @@
     </tr>
 
     @empty
-    <div>
-      <p>Não encontrado!</p>
-    </div>
+    <tr>
+      <td colspan="16">Não encontrado!</td>
+    </tr>
 
     @endforelse
           </table>
