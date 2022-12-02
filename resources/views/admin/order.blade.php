@@ -40,7 +40,8 @@
           <center><b><h1>Todos os pedidos</h1></b></center><br>
 
           <div style="padding-left: 400px; padding-bottom:30px; ">
-            <form>
+            <form action="{{url('search')}}" method="get">
+              @csrf
               <input type="text" name="search" placeholder="Digite para pesquisar">
     <input type="submit" value="Search" class="btn btn-outline-primary">
             </form>
