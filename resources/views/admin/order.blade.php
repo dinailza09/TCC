@@ -8,7 +8,7 @@
       {
         text-align:center;
         font-size: 25px;
-        font-wights:bold;
+        font-weight:bold;
         padding-bottom: 40px;
       }
       .table_deg{
@@ -62,7 +62,7 @@
               <th>{{$order->name}}</th>
               <th>{{$order->address}}</th>
               <th>{{$order->phone}}</th>
-              <th>{{$order->product_title}}</th>
+              <th><center>{{$order->product_title}}</center></th>
               <th><center>{{$order->quantity}}</center></th>
               <th><center>{{$order->price}}</center></th>
               <th>{{$order->payment_status}}</th>
