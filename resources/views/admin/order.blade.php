@@ -67,7 +67,7 @@
 
             </tr>
 
-            @foreach($order as $order)
+            @forelse($order as $order)
             <tr>
             <th><center>{{$order->id}}</center></th>
               <th>{{$order->name}}</th>
@@ -100,7 +100,12 @@
  
     </tr>
 
-    @endforeach
+    @empty
+    <div>
+      <p>Não encontrado!</p>
+    </div>
+
+    @endforelse
           </table>
 
 </div>
