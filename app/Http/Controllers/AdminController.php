@@ -181,6 +181,17 @@ public function send_user_email(Request $request, $id){
 }
 
 
+public function searchdata(Request $request){
+        
+    $searchText = $request->search;
+
+        $order = order::where('name', 'LIKE', "%$searchText%")->orWhere('phone', 'LIKE', "%$searchText%")->orWhere('product_title', 'LIKE', "%$searchText%")->get();
+
+
+        return view('admin.order', compact('order'));
+
+    }
+
 
 
 
