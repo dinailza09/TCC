@@ -70,8 +70,8 @@
                 <th>{{$product->description}}</th>
                 <th>{{$product->quantity}}</th>
                 <th>{{$product->category}}</th>
-                <th>{{$product->price}}</th>
-                <th>{{$product->discount_price}}</th>
+                <th>R${{$product->price}}</th>
+                <th>R${{$product->discount_price}}</th>
                 <th><img class="img_size" src="/product/{{$product->image}}"></th>
            
            <td><a class="btn btn-danger" onclick="return confirm('Deseja realmente deletar esse produto!')" href="{{url('delete_product', $product->id)}}">Deletar</td>

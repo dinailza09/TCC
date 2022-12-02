@@ -146,9 +146,9 @@ public function print_pdf($id){
 
 $order=order::find($id);
 
-$cart =cart::find($id);
 
-$pdf= PDF::loadview('admin.pdf', compact('order', 'cart'));
+
+$pdf= PDF::loadview('admin.pdf', compact('order'));
 
 return $pdf->download('detalhe_pedido');
 

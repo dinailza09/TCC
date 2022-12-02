@@ -59,7 +59,7 @@
 
 <div class="div_design">
 <label>Preço</label>
-<input class="text_color" type="number" name="price"  placeholder="Digite o preço">
+<input class="text_color" type="text" name="price"  placeholder="Digite o preço">
 </div>
 
 <div class="div_design">
@@ -84,7 +84,7 @@
 
 <div class="div_design">
 <label>Desconto do Preço</label>
-<input class="text_color" type="number" name="discount_price" placeholder="Digite o desconto">
+<input class="text_color" type="text" name="discount_price" placeholder="Digite o desconto">
 </div>
 
 <div class="div_design">

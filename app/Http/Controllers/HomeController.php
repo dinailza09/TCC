@@ -160,6 +160,10 @@ class HomeController extends Controller
             $order->save();
 
 
+            foreach($product as $products){
+            $itens= new itenspedidos();
+            $itens-> price = $products->price;
+            $itens->save();}
 
             $cart_id=$data->id;
 
@@ -170,7 +174,7 @@ class HomeController extends Controller
 
            
         }
-        return redirect()->back()->with('message','Produto adicionado para deluvery com sucesso');    
+        return redirect()->back()->with('message','Produto adicionado para delivery com sucesso');    
 
     }
 
