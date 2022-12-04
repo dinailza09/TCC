@@ -68,6 +68,7 @@ Route::get('/show_cart', [HomeController::class, 'show_cart']);
 
 Route::get('/remove_cart/{id}', [HomeController::class, 'remove_cart']);
 
+Route::get('/product_search', [HomeController::class, 'product_search']);
 
 Route::get('/cash_order', [HomeController::class, 'cash_order']);
 
