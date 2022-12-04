@@ -111,7 +111,7 @@
                     <div class="row">
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$31.53</h3>
+                          <h3 class="mb-0">{{$total_processing}}</h3>
                           
                         </div>
                       </div>

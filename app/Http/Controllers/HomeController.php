@@ -48,7 +48,9 @@ class HomeController extends Controller
 
             $total_delivered = order::where('delivery_status', '=', 'delivered')->get()->count();
 
-            return view('admin.home', compact('total_product', 'total_order', 'total_user', 'total_revenue', 'total_delivered'));
+            $total_processing = order::where('delivery_status', '=', 'processing')->get()->count();
+
+            return view('admin.home', compact('total_product', 'total_order', 'total_user', 'total_revenue', 'total_delivered', 'total_processing'));
         }
         else {
             $product=Product::paginate(3);
