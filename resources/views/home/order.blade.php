@@ -66,7 +66,7 @@
             <td>R${{$order->price}}</td>
             <td>{{$order->payment_status}}</td>
             <td>{{$order->delivery_status}}</td>
-            <td>{{$order->image}}</td>
+            <td><img src="product/{{$order->image}}"></td>
 </tr>
 @endforeach
 </table>
