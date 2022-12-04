@@ -298,6 +298,18 @@ public function product_search(Request $request){
     }
 
 
+    public function cancel_order($id)
+    {
+        $order = order::find($id);
+
+        $order->delivery_status = "Pedido Cancelado";!
+
+        $order->save();
+
+        return redirect()->back();
+    }
+
+
 
 
 

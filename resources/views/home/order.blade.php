@@ -58,6 +58,7 @@
                 <th class="th_deg">Status de Pagamento</th>
                 <th class="th_deg">Status de Delivery</th>
                 <th class="th_deg">Imagem</th>
+                <th class="th_deg">Cancelar Pedido</th>
             </tr>
             @foreach($order as $order)
             <tr>
@@ -66,8 +67,10 @@
             <td>R${{$order->price}}</td>
             <td>{{$order->payment_status}}</td>
             <td>{{$order->delivery_status}}</td>
-            <td><img src="product/{{$order->image}}"></td>
-</tr>
+            <td><img height="100" width="180" src="product/{{$order->image}}"></td>
+            <td>
+                <a onclick="return confirm('Você quer realmente cancelar esse pedido')" class="btn btn-danger" href="{{url('cancel_order', $order->id)}}">Cancelar Pedido</a></td>
+        </tr>
 @endforeach
 </table>
     
