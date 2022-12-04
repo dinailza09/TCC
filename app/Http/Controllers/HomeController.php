@@ -33,7 +33,12 @@ class HomeController extends Controller
 
         if($usertype=='1'){
             $total_product = product::all()->count();
-            return view('admin.home', compact('total_product'));
+
+            $total_order = order::all()->count();
+
+            $total_user = user::all()->count();
+
+            return view('admin.home', compact('total_product', 'total_order', 'total_user'));
         }
         else {
             $product=Product::paginate(3);
