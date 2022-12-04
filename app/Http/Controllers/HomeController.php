@@ -38,7 +38,15 @@ class HomeController extends Controller
 
             $total_user = user::all()->count();
 
-            return view('admin.home', compact('total_product', 'total_order', 'total_user'));
+            $order = order::all();
+
+            $total_revenue = 0;
+
+            foreach ($order as $order) {
+                $total_revenue = $total_revenue + $order->price;
+            }
+
+            return view('admin.home', compact('total_product', 'total_order', 'total_user', 'total_revenue'));
         }
         else {
             $product=Product::paginate(3);
