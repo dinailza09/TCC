@@ -284,7 +284,13 @@ public function product_search(Request $request){
     public function show_order()
     {
         if (Auth::id()) {
-            return view('home.order');
+
+            $user = Auth::user();
+
+            $userid = $user->id;
+
+            $order = order::where('user_id', '=', $userid)->get();
+            return view('home.order', compact('order'));
         } else
          {
             return redirect('login');
