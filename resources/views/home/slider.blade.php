@@ -10,15 +10,13 @@
                            <div class="col-md-7 col-lg-6 ">
                               <div class="detail-box">
                                  <h1>
-                                    <span>
-                                     20% Off nos produtos para Cachorro.
+                                 <span>
+                                     Produtos 
+                                     <br>para Cachorro
                                     </span>
                                  </h1>
-                                 <b><p>
-                                    Promoção válida, enquanto durarem os estoques. 
-                                 </p></b>
                                  <div class="btn-box">
-                                    <a href="" class="btn1">
+                                    <a href="{{url('cachorro')}}" class="btn1">
                                     Saiba mais
                                     </a>
                                  </div>
@@ -34,14 +32,12 @@
                               <div class="detail-box">
                                  <h1>
                                     <span>
-                                     10% Off nas rações, para o seu gato.
+                                     Produtos 
+                                     <br>para Gatos
                                     </span>
                                  </h1>
-                                 <b><p>
-                                    Promoção válida, enquanto durarem os estoques. 
-                                 </p></b>
                                  <div class="btn-box">
-                                    <a href="" class="btn1">
+                                    <a href="{{url('gato')}}" class="btn1">
                                     Saiba mais
                                     </a>
                                  </div>
@@ -57,15 +53,12 @@
                               <div class="detail-box">
                                  <h1>
                                     <span>
-                                    5% Off em todos os brinquedos.
+                                    Brinquedos
                                     </span>
                                     <br>
                                  </h1>
-                                 <b> <p>
-                                    Promoção válida, enquanto durarem os estoques. 
-                                 </p></b>
                                  <div class="btn-box">
-                                    <a href="" class="btn1">
+                                    <a href="{{url('brinquedo')}}" class="btn1">
                                     Saiba mais
                                     </a>
                                  </div>
