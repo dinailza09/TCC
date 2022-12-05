@@ -243,9 +243,9 @@ public function stripePost(Request $request, $totalprice)
 
             $order->product_id= $data->Product_id;
 
-            $order->payment_status='Paid';
+            $order->payment_status='Pago';
 
-            $order->delivery_status='processing';
+            $order->delivery_status='Processando';
 
             $order->save();
 
@@ -259,7 +259,7 @@ public function stripePost(Request $request, $totalprice)
         }
        
   
-    Session::flash('success', 'Payment successful!');
+    Session::flash('success', 'Pagamento com sucesso!');
           
     return back();
 

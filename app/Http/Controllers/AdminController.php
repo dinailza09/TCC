@@ -157,6 +157,8 @@ public function send_email($id){
 
     $order=order::find($id);
 
+    
+
     return view('admin.email_info', compact('order')); 
 
 }
