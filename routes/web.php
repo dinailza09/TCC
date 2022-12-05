@@ -98,4 +98,9 @@ Route::get('/show_order', [HomeController::class, 'show_order']);
 
 Route::get('/cancel_order/{id}', [HomeController::class, 'cancel_order']);
 
+Route::get('/cachorro', [HomeController::class, 'cachorro']);
+Route::get('/gato', [HomeController::class, 'gato']);
+Route::get('/brinquedo', [HomeController::class, 'brinquedo']);
+
+
 

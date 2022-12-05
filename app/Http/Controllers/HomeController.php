@@ -305,7 +305,26 @@ public function product_search(Request $request){
         return redirect()->back();
     }
 
+    public function cachorro(Request $request){
 
+        $product=product::where('category', 'LIKE', "%Cachorro%")->paginate(10);
+
+       
+        return view('home.cachorro', compact('product'));
+    }
+
+    public function gato(){
+        $product=product::where('category', 'LIKE', "%Gato%")->paginate(10);
+       
+        return view('home.gato', compact('product'));
+    }
+
+
+    public function brinquedo(){
+        $product=product::where('category', 'LIKE', "%Brinquedo%")->paginate(10);
+       
+        return view('home.brinquedo', compact('product'));
+    }
 
 
 

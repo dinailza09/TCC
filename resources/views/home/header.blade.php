@@ -12,13 +12,13 @@
                         </li>
          
                         <li class="nav-item">
-                           <a class="nav-link" href="/produtos">Cachorro</a>
+                           <a class="nav-link" href="{{url('cachorro')}}">Cachorro</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="blog_list.html">Gatos</a>
+                           <a class="nav-link" href="{{url('gato')}}">Gatos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="contact.html">Binquedos</a>
+                           <a class="nav-link" href="{{url('brinquedo')}}">Binquedos</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('show_cart')}}">🛒</a>
