@@ -32,7 +32,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                   <span>Gato</span>
+                   <span>Gatos</span>
                </h2>
                <br><br>
             </div>
