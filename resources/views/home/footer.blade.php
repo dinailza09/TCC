@@ -25,9 +25,9 @@
                         <ul>
                            <li><a href="/">Home</a></li>
                            <li><a href="#why_section layout_padding">Sobre</a></li>
-                           <li><a href="#">Cachorro</a></li>
-                           <li><a href="#">Gatos</a></li>
-                           <li><a href="#">Brinquedos</a></li>
+                           <li><a href="{{url('cachorro')}}">Cachorro</a></li>
+                           <li><a href="{{url('gato')}}">Gatos</a></li>
+                           <li><a href="{{url('brinquedo')}}">Brinquedos</a></li>
                           
                         </ul>
                      </div>
@@ -44,24 +44,6 @@
                   </div>
                      </div>
                   </div>     
-                  <div class="col-md-5">
-                     <div class="widget_menu">
-                        <h3>Newsletter</h3>
-                        <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
-                        </div>
-                        <div class="form_sub">
-                           <form>
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
-                                 </div>
-                              </fieldset>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
                   </div>
                </div>
             </div>
