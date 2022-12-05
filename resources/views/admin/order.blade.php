@@ -75,7 +75,7 @@
               <th>{{$order->phone}}</th>
               <th><center>{{$order->product_title}}</center></th>
               <th><center>{{$order->quantity}}</center></th>
-              <th><center>{{$order->price}}</center></th>
+              <th><center>R${{$order->price}}</center></th><br>
               <th>{{$order->payment_status}}</th>
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>

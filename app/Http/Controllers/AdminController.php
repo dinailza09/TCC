@@ -143,9 +143,8 @@ public function delivered($id){
 
 
 public function print_pdf($id){
-
+   
     $order=order::find($id);
-
 
 
 $pdf= PDF::loadview('admin.pdf', compact('order'));
