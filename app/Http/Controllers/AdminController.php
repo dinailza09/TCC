@@ -103,6 +103,8 @@ class AdminController extends Controller
         }
 
         public function update_product_confirm(Request $request, $id){
+
+            if (Auth::id()) {
             $product=product::find($id);
 
             $product->title=$request->title;
@@ -125,6 +127,10 @@ class AdminController extends Controller
             $product->save();
 
             return redirect()->back()->with('message','Produto alterado com sucesso');
+               } else {
+                   return redirect('login');
+               }
+          
         }
 
 
