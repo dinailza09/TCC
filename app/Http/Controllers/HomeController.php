@@ -206,12 +206,6 @@ class HomeController extends Controller
 
             $order->save();
 
-
-            foreach($product as $products){
-            $itens= new itenspedidos();
-            $itens-> price = $products->price;
-            $itens->save();}
-
             $cart_id=$data->id;
 
             $cart=cart::find($cart_id);
