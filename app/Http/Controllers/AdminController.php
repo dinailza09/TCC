@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 use App\Models\Category;
 
 use App\Models\Product;
@@ -24,8 +26,13 @@ use App\Notifications\SendEmailNotification;
 class AdminController extends Controller
 {
     public function view_category(){
-        $data=category::all();
+        if (Auth::id()) {
+         $data=category::all();
         return view('admin.category', compact('data'));
+        } else {
+            return redirect('login');
+        }
+       
     }
 
     public function add_category(Request $request){
