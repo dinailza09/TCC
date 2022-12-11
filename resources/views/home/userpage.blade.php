@@ -36,9 +36,6 @@
       <!-- end product section -->
       @include('home.product')
       <!-- subscribe section -->
-      @include('home.subscribe')
-      <!-- client section -->
-      @include('home.client')
       <!-- footer -->
       @include('home.footer')
       

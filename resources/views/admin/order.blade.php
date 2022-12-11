@@ -37,15 +37,15 @@
           <div class="main-panel">
           <div class="content-wrapper">
 
-          <center><b><h1>Todos os pedidos</h1></b></center><br>
+         <b><h1>Todos os pedidos</h1></b><br>
 
-          <div style="padding-left: 400px; padding-bottom:30px; ">
+         <div style="padding-left: 400px; padding-bottom:30px; ">
             <form action="{{url('search')}}" method="GET">
               @csrf
-              <input type="text" style="color: black;" name="search" placeholder="Digite para pesquisar">
+            <input type="text" style="color: black;" name="search" placeholder="Digite para pesquisar">
     <input type="submit" value="Search" class="btn btn-outline-primary">
             </form>
-          </div>
+          </div>  
 
 
 
