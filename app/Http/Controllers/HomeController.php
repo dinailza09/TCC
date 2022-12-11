@@ -157,8 +157,11 @@ class HomeController extends Controller
                 $id=Auth::user()->id;
 
                 $cart =cart::where('user_id', '=', $id)->get();
+
+               
+                return view('home.showcart', compact('cart')); 
+                
     
-                return view('home.showcart', compact('cart'));
             }
 
             else{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-   <head>
+  
       <!-- Basic -->
       
       <meta charset="utf-8" />
@@ -16,7 +16,7 @@
       <title>Carrinho - Villa Pet</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="{{asset('home/css/bootstrap.css')}}" />
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <link href="{{asset('home/css/font-awesome.min.css')}}"  rel="stylesheet" />
       <!-- Custom styles for this template -->
       <link href="{{asset('home/css/style.css')}}" rel="stylesheet" />
@@ -58,6 +58,9 @@
 
    </head>
    <body>
+
+   @include('sweetalert::alert')
+
       <div class="hero_area">
          <!-- header -->
         @include('home.header')
@@ -90,7 +93,7 @@
             <th>R${{$cart->price}} </th>
 
             <th><img class="img_deg" src="/product/{{$cart->image}}"></th>
-            <th><a class="btn btn-danger" onclick="return confirm('Deseja realmente apagar esse produto?')" href="{{url('/remove_cart', $cart->id)}}">Remover</th>
+            <th><a class="btn btn-danger" onclick="confirmation(event)" href="{{url('/remove_cart', $cart->id)}}">Remover</th>
             </tr>
 
             <?php $totalprice=$totalprice + $cart->price ?>
@@ -118,6 +121,27 @@
          
          </p>
       </div>
+
+      <script>
+      function confirmation(ev){
+        ev.preventDefault();
+        var urlToRedirect = ev.currentTarget.getAttribute('href');
+        console.log(urlToRedirect);
+    swal({
+    title: "Você quer realmente excluir esse produto?",
+    text: "Você não será capaz de reverter isso!!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+ })
+ .then((willCancel)=> {
+    if(willCancel){
+        window.location.href = urlToRedirect;
+    } 
+});
+ }
+</script>
+
       <!-- jQery -->
       <script src="home/js/jquery-3.4.1.min.js"></script>
       <!-- popper js -->
