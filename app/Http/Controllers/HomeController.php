@@ -100,7 +100,7 @@ class HomeController extends Controller
 
                 $cart->save();
 
-                return redirect()->back();
+                return redirect()->back()->with('message', 'Produto adicionado com sucesso!');
 
             } else {
 
@@ -134,7 +134,7 @@ class HomeController extends Controller
      
                 $cart->save();
      
-                return redirect()->back();
+                return redirect()->back()->with('message', 'Produto adicionado com sucesso!');
             }
 
         }
