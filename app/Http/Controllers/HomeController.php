@@ -14,6 +14,8 @@ use App\Models\Cart;
 
 use App\Models\Order;
 
+use RealRashid\SweetAlert\Facades\Alert;
+
 use Session;
 
 use Stripe;
@@ -100,7 +102,9 @@ class HomeController extends Controller
 
                 $cart->save();
 
-                return redirect()->back()->with('message', 'Produto adicionado com sucesso!');
+                Alert::success('Produto adicionado com sucesso!', 'Produto adicionado no carrinho');
+
+                return redirect()->back();
 
             } else {
 
@@ -133,8 +137,9 @@ class HomeController extends Controller
                 $cart->quantity=$request->quantity;
      
                 $cart->save();
-     
-                return redirect()->back()->with('message', 'Produto adicionado com sucesso!');
+                Alert::success('Produto adicionado com sucesso!', 'Produto adicionado no carrinho');
+
+                return redirect()->back();
             }
 
         }

@@ -22,6 +22,9 @@
       <link href="home/css/responsive.css" rel="stylesheet" />
    </head>
    <body>
+
+      @include('sweetalert::alert')
+
       <div class="hero_area">
          <!-- header -->
         @include('home.header')
