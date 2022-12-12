@@ -70,11 +70,16 @@
             <td>{{$order->delivery_status}}</td>
             <td><img height="100" width="180" src="product/{{$order->image}}"></td>
             <td>
-                @if($order->delivery_status=='processing')
-                <a onclick="return confirm('Você quer realmente cancelar esse pedido')" class="btn btn-danger" href="{{url('cancel_order', $order->id)}}">Cancelar Pedido</a></td>
-        @else
-        <p style="color:blue;">Não Permitido</p>
-        @endif    </tr>
+                @if($order->delivery_status =='Processando')
+                <a onclick="return confirm('Você quer realmente cancelar esse pedido')" class="btn btn-danger" href="{{url('cancel_order', $order->id)}}">Cancelar Pedido</a>
+            
+            @else 
+            
+            <p style="color: blue;"> Não é permitido!</p>
+            
+                @endif
+            </td>
+       </tr>
 @endforeach
 </table>
     

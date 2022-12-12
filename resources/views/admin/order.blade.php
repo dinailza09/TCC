@@ -61,7 +61,7 @@
               <th style="padding: 5px;">Status do pagamento</th>
               <th  style="padding: 5px;">Status do delivery</th>
               <th  style="padding: 5px;">Imagem</th>
-              <th  style="padding: 5px;">Entregue</th>
+              <th  style="padding: 5px;">Delivery</th>
               <th  style="padding: 5px;">Gerar PDF</th>
               <th  style="padding: 5px;">Enviar Email</th>
 
@@ -69,22 +69,23 @@
 
             @forelse($order as $order)
             <tr>
-            <th><center>{{$order->id}}</center></th>
+            <th>{{$order->id}}</th>
               <th>{{$order->name}}</th>
+
               <th>{{$order->address}}</th>
               <th>{{$order->phone}}</th>
               <th><center>{{$order->product_title}}</center></th>
               <th><center>{{$order->quantity}}</center></th>
               <th><center>R${{$order->price}}</center></th><br>
-              <th>{{$order->payment_status}}</th>
+              <th><center>{{$order->payment_status}}<center></th>
               <th>{{$order->delivery_status}}</th>
               <th><img class="img_size" src="/product/{{$order->image}}"></th>
 
               <td>
-                @if($order->delivery_status=='processing')
-                <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Are you sure this product is delivered!!!')" class="btn btn-primary">Entregue</a>
+                @if($order->delivery_status=='Processando')
+                <center> <a href="{{url('delivered', $order->id)}}" onclick="return confirm('Tem certeza que este produto foi entregue!')" class="btn btn-primary">Delivery</a></center>
               @else
-              <p style="color:green;">Entregue</p>
+              <center> <p style="color:green;">Delivery</p></center>
               
                 @endif
               </td>

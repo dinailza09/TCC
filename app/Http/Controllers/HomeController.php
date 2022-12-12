@@ -48,9 +48,9 @@ class HomeController extends Controller
                 $total_revenue = $total_revenue + $order->price;
             }
 
-            $total_delivered = order::where('delivery_status', '=', 'delivered')->get()->count();
+            $total_delivered = order::where('delivery_status', '=', 'Delivery')->get()->count();
 
-            $total_processing = order::where('delivery_status', '=', 'processing')->get()->count();
+            $total_processing = order::where('delivery_status', '=', 'Processando')->get()->count();
 
             return view('admin.home', compact('total_product', 'total_order', 'total_user', 'total_revenue', 'total_delivered', 'total_processing'));
         }
@@ -208,9 +208,9 @@ class HomeController extends Controller
 
             $order->product_id= $data->Product_id;
 
-            $order->payment_status='cash on delivery';
+            $order->payment_status='Dinheiro na entrega';
 
-            $order->delivery_status='processing';
+            $order->delivery_status='Processando';
 
             $order->save();
 
@@ -329,12 +329,13 @@ public function product_search(Request $request){
     {
         $order = order::find($id);
 
-        $order->delivery_status = "Pedido Cancelado";!
+        $order->delivery_status = 'Pedido Cancelado';
 
         $order->save();
 
         return redirect()->back();
     }
+
 
     public function cachorro(Request $request){
 

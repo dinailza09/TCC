@@ -4,23 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Auth;
-
 use App\Models\Category;
 
 use App\Models\Product;
 
 use App\Models\Order;
 
-use App\Models\ItensPedido;
+use PDF;
+
+use Illuminate\Support\Facades\Notification; 
+
+use App\Notifications\SendEmailNotification;
+
+use Illuminate\Support\Facades\Auth;
 
 use App\Models\Cart;
 
-use PDF;
 
-use Notification;
-
-use App\Notifications\SendEmailNotification;
 
 
 class AdminController extends Controller
@@ -145,9 +145,7 @@ public function order(){
 public function delivered($id){
     $order=order::find($id);
 
-    $order->delivery_status="Entregue";
-
-    $order->payment_status="Pago";
+    $order->delivery_status="Delivery";
 
     $order->save();
 
@@ -166,7 +164,8 @@ return $pdf->download('detalhe_pedido');
 
 }
 
-public function send_email($id){
+public function send_email($id)
+{
 
     $order=order::find($id);
 

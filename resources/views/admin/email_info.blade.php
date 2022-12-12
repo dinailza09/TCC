@@ -24,9 +24,9 @@
           <div class="main-panel">
           <div class="content-wrapper">
 
-          <h1 style="text-align: center; font-size:23px;" >Enviar email para {{$order->email}} </h1>
+          <h1 style="text-align: center; font-size:23px;" >Enviar email para {{$order->email}}</h1>
 
-<form action="{{url('send_user_email', $order->id)}" method="POST">
+<form action="{{url('/send_user_email', $order->id)}}" method="POST">
 
 @csrf
           <div style="padding-left: 35%; padding-top:30px;">
@@ -35,7 +35,7 @@
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
-            <label> Email FirstLing:</label>
+            <label>Título:</label>
             <input style="color: black;" type="text" name="firstline">
 </div>
 
@@ -45,17 +45,17 @@
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
-            <label>Email Button name:</label>
+            <label>Nome do botão do link:</label>
             <input style="color: black;" type="text" name="button">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
-            <label> Email URL:</label>
+            <label> Link do botão (URL):</label>
             <input style="color: black;" type="text" name="url">
 </div>
 
 <div style="padding-left: 35%; padding-top:30px;">
-            <label> Email Last Line:</label>
+            <label> Última Linha do Email:</label>
             <input style="color: black;" type="text" name="lastline">
 </div>
 
