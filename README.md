@@ -16,7 +16,7 @@
 <h4> 📁 Acesso ao projeto</h4>
 <h4> Clonar todos os arquivos do repositório</h4>
 ``git clone``
-
+``phpMyAdmin``
 <h4>Executar o comando</h4>
 ``composer install`` 
 
