@@ -1,7 +1,7 @@
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<h3>Sistema web, voltado para controle de PetShop.</h3>
+<h3>E-commerce, voltado para controle de PetShop.</h3>
 
 <h4> 
     :construction:  Projeto em construção  :construction:
