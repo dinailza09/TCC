@@ -14,28 +14,28 @@
 
 <h4>Todos instalados corretamente, podemos clonar o projeto. <h4>
 <h4> 📁 Acesso ao projeto</h4>
- Clonar todos os arquivos do repositório<br>
+<h4> Clonar todos os arquivos do repositório</h4><br>
  
 ```git clone``` 
 
-Executar o comando<br>
+<h4>Executar o comando</h4><br>
 ```composer install``` 
 
-Agora, vamos	copiar	o	arquivo<br>
-.env.example para	um	novo	arquivo	.env<br>
+<h4>Agora, vamos	copiar	o	arquivo</h4><br>
+<h4>.env.example para	um	novo	arquivo	.env</h4><br>
 ◦Comando -> ```cp .env.example .env```<br>
 
-Próximo passo gerar a chave de aplicação<br>
+<h4>Próximo passo gerar a chave de aplicação</h4><br>
 ```php artisan key:generate```<br>
 
-Configurando o Banco de Dados<br>
-Mudaremos	o	.env adicionando	as	configurações	do	banco	de	dados	de	nossa	aplicação.<br>
+<h4>Configurando o Banco de Dados</h4><br>
+<h4>Mudaremos	o	.env adicionando	as	configurações	do	banco	de	dados	de	nossa	aplicação.</h4><br>
 
-Vamos	apenas	criar	o	banco	de	dados	(projeto)	no	nosso	SGBD.<br> 
+<h4>Vamos	apenas	criar	o	banco	de	dados	(projeto)	no	nosso	SGBD.</h4><br> 
 ◦ Execute	o	comando	de	execução	de	migrations->```php artisan migrate```
 
 <h4> 🛠️ Rodar o projeto<br></h4>
-Por fim, dar o comando pra subir o projeto no servidor <br>
+<h4>Por fim, dar o comando pra subir o projeto no servidor </h4>
  
 ```php artisan serve```
 
