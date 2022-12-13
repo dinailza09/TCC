@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/47919052/207409098-117c75fb-1731-4eb8-9a56-84a0083922fd.png)
 
-<h3>E-commerce, voltado para controle de PetShop.</h3>
+<h3>E-commerce, voltado para PetShop.</h3>
 
 <h4>✔️ Tecnologias utilizadas</h4>
 
