@@ -15,7 +15,6 @@
 <h4>Todos instalados corretamente, podemos clonar o projeto. <h4>
 <h4> 📁 Acesso ao projeto</h4>
 <h4> Clonar todos os arquivos do repositório</h4>
- 
 ```git clone``` 
 
 <h4>Executar o comando</h4>
