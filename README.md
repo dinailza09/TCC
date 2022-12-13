@@ -1,13 +1,9 @@
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+![image](https://user-images.githubusercontent.com/47919052/207409098-117c75fb-1731-4eb8-9a56-84a0083922fd.png)
+
 <h3>E-commerce, voltado para controle de PetShop.</h3>
-
-![image](https://user-images.githubusercontent.com/47919052/207408931-c7fd1530-4bf0-4f71-a8fb-672b24c7d45b.png)
-
-<h4> 
-    :construction:  Projeto em construção  :construction:
-</h4>
 
 <h4>✔️ Tecnologias utilizadas</h4>
 
