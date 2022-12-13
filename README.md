@@ -3,6 +3,8 @@
 
 <h3>E-commerce, voltado para controle de PetShop.</h3>
 
+![image](https://user-images.githubusercontent.com/47919052/207408931-c7fd1530-4bf0-4f71-a8fb-672b24c7d45b.png)
+
 <h4> 
     :construction:  Projeto em construção  :construction:
 </h4>
